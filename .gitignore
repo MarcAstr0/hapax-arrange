@@ -29,5 +29,5 @@ htmlcov/
 .DS_Store
 Thumbs.db
 
-# Claude Code local settings (per-machine permissions)
-.claude/
+# Claude Code per-machine permissions (shared rules/settings.json stay tracked)
+.claude/settings.local.json
