@@ -8,8 +8,7 @@ work on `hapax-arrange`.
 A Python 3.11+ CLI that converts a DAW-exported multi-track MIDI file (with
 section markers) into a Squarp Hapax import bundle: per-pattern `.mid` files
 plus a human-readable `ARRANGEMENT.md` checklist. See `README.md` for the
-user-facing overview and the full design spec at
-`/home/mario/Documentos/Personal Vault/wiki/goals/Hapax Arrange Tool — Project Plan.md`.
+user-facing overview.
 
 ## Dev loop
 
@@ -84,27 +83,14 @@ for the full list; the load-bearing ones are:
 
 ## Git conventions
 
-- `user.name = Mario Castro Squella`, `user.email = yo@marcastr0.com`
-  (set in local `.git/config`).
-- Commits credit Claude as co-author via the standard `Co-Authored-By:`
-  footer (see git log for format).
-- Default branch is `main`, tracks `origin/main` at
-  `git@github.com:MarcAstr0/hapax-arrange.git`.
+- Default branch is `main`, tracks `origin/main` on GitHub.
+- When Claude Code assists on a commit, credit it via the standard
+  `Co-Authored-By:` footer (see `git log` for format).
 
 ## Hardware validation status
 
 MVP has been validated only against synthesized fixtures and the programmatic
 demo. End-to-end hardware validation (copy `MIDI/` to the Hapax SD card and
 walk the checklist on a real song) is the remaining known-unknown — it
-requires Mario's Hapax + a DAW. Do not claim hardware-verified in docs until
-that happens.
-
-## Design spec and background
-
-- Plan doc:
-  `/home/mario/Documentos/Personal Vault/wiki/goals/Hapax Arrange Tool — Project Plan.md`
-- Hapax concept pages:
-  `/home/mario/Documentos/Personal Vault/wiki/concepts/Hapax Song Structure.md`,
-  `/home/mario/Documentos/Personal Vault/wiki/concepts/Hapax MIDI Import Workflow.md`
-- Research synthesis:
-  `/home/mario/Documentos/Personal Vault/wiki/questions/Research - Hapax MIDI Arrangement Import.md`
+requires access to a Squarp Hapax + a DAW. Do not claim hardware-verified
+in docs until that happens.
